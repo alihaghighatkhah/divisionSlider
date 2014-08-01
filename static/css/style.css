@@ -1,0 +1,74 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+.container { margin: 0 auto; position: relative; width: 960px; background-color: #f4f4f4; -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2); box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*============================================== BASE
+===============================================*/
+body { background-color: #f1f1f1; font-size: 10px; -webkit-user-select: none; /* Chrome all / Safari all */ -moz-user-select: none; /* Firefox all */ -ms-user-select: none; /* IE 10+ */ -o-user-select: none; user-select: none; -khtml-user-select: none; -webkit-touch-callout: none; }
+
+/* prevent undesired selection */
+.unselectable { -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; -webkit-user-drag: none; user-drag: none; }
+
+/*============================================== LAYOUT
+===============================================*/
+.l-video { width: 100%; }
+
+.l-persent { width: 100%; background-color: #FFF; }
+
+/*==============================================
+SLIDER MAIN RULLS
+===============================================*/
+.m-division-slider { width: 100%; height: 500px; position: relative; /* the are two layers inside the slider, each containing some elements , thse divisions need to be animated in width, and context elements must to be animated in opacity and scale */ /*division.right*/ }
+.m-division-slider .division { position: absolute; width: 100%; height: 444px; top: 32px; background-color: #b1ccd1; }
+.m-division-slider .main-object { display: block; width: 174px; height: 404px; position: absolute; top: 50%; margin-top: -202px; }
+.m-division-slider .description-box { float: right; width: 211px; height: 250px; margin-right: 10px; margin-top: 194px; position: relative; opacity: 0; }
+.m-division-slider .description-box figure { overflow: hidden; width: 142px; height: 142px; position: relative; margin: 0 auto; }
+.m-division-slider .description-box h2, .m-division-slider .description-box p { font-family: Oswald; float: left; clear: left; }
+.m-division-slider .description-box h2 { font-size: 22px; margin-top: 15px; color: #7874b9; }
+.m-division-slider .description-box p { font-size: 14px; line-height: 20px; margin-top: 4px; text-align: left; width: 100%; }
+.m-division-slider .division.left { left: 0; z-index: 1; width: 100%; /* -----  Elements inside this division------*/ }
+.m-division-slider .division.left .main-object { left: 50%; margin-left: 15px; }
+.m-division-slider .division.right { right: 0; z-index: 2; width: 50%; overflow: hidden; }
+.m-division-slider .division.right .main-object { right: 470px; }
+.m-division-slider .border { width: 4px; height: 0px; position: absolute; right: 50%; margin-right: -2px; top: 50px; z-index: 999; background-color: #7874b9; overflow: visible !important; }
+.m-division-slider .border .button { width: 0px; height: 61px; position: absolute; top: 50%; margin-top: -30px; left: 0px; background: transparent url(../img/button.png) no-repeat center; cursor: col-resize; }
+
+/*==============================================
+PRESENTAILNAL RULLS, FOR THIS EXAMPLE
+===============================================*/
+#skin { right: 318px; height: 360px; margin-top: 0; position: relative; }
+#skin figure { float: right; }
+#skin figure img { display: block; width: 100%; height: 100%; position: absolute; top: 0; right: 0; }
+#skin h2 { width: 80%; text-align: right; float: right; }
+#skin p { font-size: 16px; text-align: right; width: 100%; font-weight: 300; }
+#skin p span { color: #7874b9; }
+
+#drop { position: relative; float: left; margin-top: 215px; margin-left: 80px; z-index: 1; }
+#drop h4, #drop h5 { font-family: "Oswald" , sans-serif; text-align: center; font-weight: 100; }
+#drop h4 { color: #7874b9; font-size: 22px; line-height: 32px; margin-top: 6px; }
+#drop h5 { color: #595450; font-size: 16px; line-height: 20px; }
+
+#animation, #soft { float: right; width: 230px; height: 380px; margin-right: 145px; margin-top: -5px; position: relative; }
+#animation figure, #soft figure { float: left; }
+#animation figure img, #soft figure img { display: block; width: 100%; height: 100%; top: 0; left: 0; position: absolute; }
+#animation h2, #animation p, #soft h2, #soft p { font-family: Oswald; float: left; clear: left; }
+#animation h2, #soft h2 { font-size: 22px; margin-top: 7px; color: #7874b9; font-weight: 100; }
+#animation p, #soft p { font-size: 14px; line-height: 20px; margin-top: 18px; font-weight: 300; letter-spacing: 1px; width: 100%; display: block; }
+#animation span, #soft span { color: #7874b9; }
