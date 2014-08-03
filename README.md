@@ -1,4 +1,4 @@
 divisionSlider
 ==============
 
-division slider
+Just try it!
